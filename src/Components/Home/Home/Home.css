@@ -1,0 +1,120 @@
+.banner-image {
+  background-image: url(../../../images/hero_bg_2.jpg);
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+.site-section {
+  padding: 2.5em 0;
+}
+
+@media (min-width: 768px) {
+  .site-section {
+    padding: 5em 0;
+  }
+}
+
+.site-section.site-section-sm {
+  padding: 4em 0;
+}
+
+.site-section-heading {
+  position: relative;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .site-section-heading {
+    font-size: 4rem;
+  }
+}
+
+.site-section-heading:after {
+  content: "";
+  left: 0%;
+  bottom: 0;
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #ef6c57;
+}
+
+.site-section-heading.text-center:after {
+  content: "";
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "";
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #ef6c57;
+}
+
+.color-black-opacity-5 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.unit-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+.unit-1:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 18%,
+    rgba(0, 0, 0, 0.8) 99%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.unit-1 img {
+  height: 350px;
+  transform: scale(1);
+}
+
+.unit-1 img,
+.unit-1 .unit-1-text {
+  transition: 0.3s all ease-in-out;
+}
+
+.unit-1 .unit-1-text {
+  z-index: 2;
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  display: block;
+  width: 100%;
+}
+
+.unit-1 .unit-1-text .unit-1-heading {
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.unit-1:hover .unit-1-text {
+  bottom: 30px;
+}
+
+.unit-1:hover img {
+  transform: scale(1.05);
+}
+
